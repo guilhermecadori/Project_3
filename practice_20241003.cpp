@@ -31,5 +31,4 @@ int main() {
     std::cout << powerOn << std::endl;
 
     return 0;
-
 }
