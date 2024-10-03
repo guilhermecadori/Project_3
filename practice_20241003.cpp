@@ -30,8 +30,6 @@ int main() {
     std::cout << student << std::endl;
     std::cout << powerOn << std::endl;
 
-
-
     return 0;
 
 }
