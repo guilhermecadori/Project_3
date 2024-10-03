@@ -1,6 +1,7 @@
 #include <iostream>
 
 int main() {
+    
     // Integer variable
     int x = 5;
     int y = 15;
@@ -30,4 +31,5 @@ int main() {
     std::cout << powerOn << std::endl;
 
     return 0;
+    
 }
