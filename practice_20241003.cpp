@@ -1,7 +1,6 @@
 #include <iostream>
 
 int main() {
-
     // Integer variable
     int x = 5;
     int y = 15;
