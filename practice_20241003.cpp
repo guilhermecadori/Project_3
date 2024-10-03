@@ -29,6 +29,9 @@ int main() {
     std::cout << dollarSign << std::endl;
     std::cout << student << std::endl;
     std::cout << powerOn << std::endl;
-    
+
+
+
     return 0;
+
 }
