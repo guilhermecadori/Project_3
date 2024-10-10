@@ -35,3 +35,13 @@ std::string repeat_str(size_t repeat, const std::string& str) {
     For example, when the input is green, output should be yellow.
 */
 
+std::string update_light(std::string current) {
+
+    if (current == "green") {
+        return "yellow";
+    } else if (current == "yellow") {
+        return "red";
+    } else {
+        return "green";
+    }
+}
