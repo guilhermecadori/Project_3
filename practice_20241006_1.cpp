@@ -21,3 +21,4 @@ int move(int position, int roll) {
     
     return newPosition;
 }
+
