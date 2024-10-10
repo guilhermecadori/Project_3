@@ -45,3 +45,4 @@ std::string update_light(std::string current) {
         return "green";
     }
 }
+
