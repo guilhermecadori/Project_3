@@ -1,8 +1,3 @@
-// Arithmetic Operator
-// +, +=, ++, -, -=, --, *, =*, /, /=, %, precedence
-
-
-
 // Type conversion
 
 /*
