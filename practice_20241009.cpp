@@ -19,10 +19,5 @@ std::string repeat_str(size_t repeat, const std::string& str) {
     };
 
     return str_acumm; 
-}
 
-int main() {
-
-
-    return 0;
 }
