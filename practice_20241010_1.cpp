@@ -33,7 +33,5 @@ int main() {
     std::cout << x_explicit_conversion << std::endl;
     std::cout << x << std::endl;
 
-
     return 0;   
-
 }
