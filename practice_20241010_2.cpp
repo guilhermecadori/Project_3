@@ -6,18 +6,18 @@
 int main() {
 
     int sum_1    = 1;
-    int sum_2    = 1;
-    int addOne   = 1;
+    int sum_2    = 2;
+    int addOne   = 4;
 
     int sub_1    = 5;
-    int sub_2    = 5;
-    int subOne   = 5;
+    int sub_2    = 8;
+    int subOne   = 10;
 
     int mult_1   = 2;
-    int mult_2   = 2;
+    int mult_2   = 9;
 
-    int div_1    = 4;
-    int div_2    = 4;
+    int div_1    = 12;
+    int div_2    = 15;
 
     int mod_1       ;
     int mod_2       ;
@@ -62,17 +62,17 @@ int main() {
 /*
     Results:
         2
-        2
-        0
+        3
+        3
+        4
+        7
         4
         4
-        1
-        4
-        4
-        2
-        2
+        18
+        6
+        7
         0
         1
 
-        [Done] exited with code=0 in 0.542 seconds
+        [Done] exited with code=0 in 0.452 seconds
 */
