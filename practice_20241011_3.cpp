@@ -10,6 +10,9 @@ int main() {
     double B;
     double C;
 
+    // It's also possible to define multiple vars of the same type at once
+    // double a, b, hypotenuse;
+
     std::cout << "Please provide A: " << std::endl;
     std::cin >> A;
 
