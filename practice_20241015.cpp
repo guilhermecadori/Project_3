@@ -27,9 +27,12 @@ int square_sum(const std::vector<int>& numbers) {
 // Testing 
 int main() {
 
+    int result;
     std::vector<int> vec = {1, 2, 3};
 
-    square_sum(vec);
+    result = square_sum(vec);
+
+    std::cout << "Sum of squares is: " << result << std::endl;
 
     return 0;
 }
