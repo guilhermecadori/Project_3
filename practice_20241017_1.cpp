@@ -70,18 +70,15 @@ std::string how_much_i_love_you(int nb_petals) {
     }
     
     /*
-        The warning you are seeing is caused by the fact that the switch statement 
+        The warning we are seeing is caused by the fact that the switch statement 
         does not guarantee a return for every possible execution path. 
         The compiler expects that the function will always return a value, but it 
         cannot confirm this because there is no explicit return after the switch block. 
         In theory, all the possible cases of nb_petals % 6 are handled, but the compiler 
-        isn't able to determine this for sure.
+        isn't able to determine this.
 
-        To remove the warning, you need to add a default return statement outside of the 
+        To remove the warning we need to add a default return statement outside of the 
         switch block to ensure that every possible execution path returns a value.
-
-        You can add a return statement at the end of the function that handles any unexpected cases,
-        even though in practice this shouldn't happen.
         
     */
 
