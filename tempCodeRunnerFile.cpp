@@ -1,1 +1,1 @@
->> std::ws
+            cleanOutputString.push_back(element);
