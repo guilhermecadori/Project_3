@@ -56,8 +56,7 @@ int main() {
     for (const auto& elem : result) {
         std::cout << elem << " ";
     }
-    std::cout << std::endl;
-
+    
     return 0;
 }
 
