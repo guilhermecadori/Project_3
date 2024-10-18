@@ -38,7 +38,7 @@ int main() {
 
     // Create input string
     // Create result var
-    std::string test_input = "Hello y'all!!!!!!";
+    std::string test_input = "Hello, y'all!!!!!!";
     std::string result;
 
     // Test function
