@@ -19,40 +19,22 @@
 // Function
 std::string longest(const std::string s1, const std::string s2) {
 
-    std::string s1Unique;
-    std::string s2Unique;
-    std::string longest_string;
+    std::string stringConcatenated = s1 + s2;
+    std::string stringUnique;
 
     // Prepare s1 string
-    for (char element : s1) {
+    for (char element : stringConcatenated) {
         // Adding unique elments
-        if (!s1Unique.find(element)) {
-            s1Unique.push_back(element);
+        if (stringUnique.find(element) == std::string::npos) {
+            stringUnique.push_back(element);
         }
-    }
-
-    // Prepare s2 string
-    for (char element : s2) {
-        // Adding unique elments
-        if (!s2Unique.find(element)) {
-            s2Unique.push_back(element);
-        }
-    }
-
-    // Compare string size
-    // Returns first passsed string if s1 and s2 are of the same length after being cleaned
-    if (s1Unique.size() >= s2Unique.size()) {
-        longest_string = s1Unique;
-    }
-    else {
-        longest_string = s2Unique;
     }
 
     // Sort string
-    std::sort(longest_string.begin(), longest_string.end());
+    std::sort(stringUnique.begin(), stringUnique.end());
 
     // Return string
-    return longest_string;
+    return stringUnique;
 }
 
 
