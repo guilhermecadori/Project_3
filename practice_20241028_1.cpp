@@ -14,20 +14,20 @@
 #include <vector>
 
 // Function
-std::vector<int> digitize(unsigned long n) {
+std::vector<int> digitize(unsigned long long n) {
 
     // Variable definition
     std::vector<int> num_arr_reverse = {};
     int temp_num;
 
     if (n == 0) {
-        return num_arr_reverse = {0};
+        return {0};
     }
     // Capture the digits of number n and store them in a array
     while (n > 0) {
         temp_num = n % 10;
         num_arr_reverse.push_back(temp_num);
-        n = int(n / 10);
+        n /= 10;
     }
 
     // Return result
@@ -39,7 +39,7 @@ std::vector<int> digitize(unsigned long n) {
 int main() {
 
     // Test numbers
-    int num1 = 12345;
+    unsigned long long num1 = 45762893920LL;
     int num2 = 987;
     std::vector<int> result1 = {};
     std::vector<int> result2 = {};
