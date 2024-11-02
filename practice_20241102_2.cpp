@@ -13,7 +13,6 @@ bool is_square(int n) {
 }
 
 
-
 // Test
 int main() {
     int test1 = 25;
@@ -24,7 +23,7 @@ int main() {
     std::cout << "Result 1: " << is_square(test1) << '\n'; // Expected: true
     std::cout << "Result 2: " << is_square(test2) << '\n'; // Expected: false
     std::cout << "Result 3: " << is_square(test3) << '\n'; // Expected: false
-    std::cout << "Result 4: " << is_square(test4) << '\n'; // Expected: true
+    std::cout << "Result 4: " << is_square(test4); // Expected: true
 
     return 0;
 }
