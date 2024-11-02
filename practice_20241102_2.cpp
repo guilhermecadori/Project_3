@@ -12,6 +12,8 @@ bool is_square(int n) {
     return false; // No perfect square root found
 }
 
+
+
 // Test
 int main() {
     int test1 = 25;
