@@ -75,6 +75,7 @@ bool is_square(int n) {
     }
 }
 
+
 // Test
 int main () {
 
