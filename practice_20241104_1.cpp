@@ -43,6 +43,8 @@ std::string smash(std::vector<std::string> wordArray) {
     return outputString;
 }
 
+
+
 using namespace std;
 
 // Test
