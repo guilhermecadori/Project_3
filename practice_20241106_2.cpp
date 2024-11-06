@@ -36,9 +36,9 @@ std::string sortStrings(std::vector<std::string> stringArray) {
     }
 
     // Sort based on ASCII (ASCII is case-sensitive by itself)
-    std::sort(arrayASCII.begin(), arrayASCII.end(), std::greater<>());
+    std::sort(arrayASCII.begin(), arrayASCII.end());
 
-    // Adds requested * char between letters
+    // Adds requested "***" char between letters
     firstWordASCII = arrayASCII[0];  // Now firstWordASCII is a string
     for (char c : firstWordASCII) {
         asciiChar = c + std::string("***");  // Convert char and append ***
