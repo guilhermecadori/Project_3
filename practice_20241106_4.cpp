@@ -24,7 +24,7 @@ int sequenceSum(int begin, int end, int step) {
     std::vector<int> sumVector;
 
     if (begin == end) {
-        return sum;
+        return begin;
     }
     else if (begin < end) {
         sum = begin;
@@ -55,7 +55,7 @@ int sequenceSum(int begin, int end, int step) {
 // Test
 int main() {
 
-    int begin = 2, end = 6, step = 2;
+    int begin = 2, end = 2, step = 2;
 
     std::cout << sequenceSum(begin, end, step);
 
