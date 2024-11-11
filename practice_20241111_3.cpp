@@ -20,23 +20,14 @@ Notes:
 // Function
 std::string stringSumNumber(std::string number1, std::string number2) {
 
-    int intNumber1 = 0;
-    int intNumber2 = 0;
-    int sum;
     std::string stringSum = "0";
 
-    if (number1.empty()) {
-        number1 = "0";
+    if (!number1.empty() & !number2.empty() ) {
+        int intNumber1 = std::stoi(number1);
+        int intNumber2 = std::stoi(number2);
+        int sum = intNumber1 + intNumber2;
+        stringSum = std::to_string(sum);
     }
-
-    if (number2.empty()) {
-        number2 = "0";
-    }
-
-    intNumber1 = std::stoi(number1);
-    intNumber2 = std::stoi(number2);
-    sum = intNumber1 + intNumber2;
-    stringSum = std::to_string(sum);
         
     return stringSum;
 }
