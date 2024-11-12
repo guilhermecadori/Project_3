@@ -35,21 +35,18 @@ std::vector<std::string> createTower(int nLevels) {
     std::string levelStructure;
     int nAsterisk = 1;
     int nSpaces = nLevels - 1;
-    int level = 1;
     char ast = '*';
     char spac =  ' ';
-    std::string astLoop(nAsterisk, ast);
-    std::string spacLoop(nSpaces, spac);
+
     
     // Creating tower levels
-    while (level <= nLevels) {
+    for (int level = 1; level <= nLevels; level++) {
+        std::string astLoop(nAsterisk, ast);
+        std::string spacLoop(nSpaces, spac);
         levelStructure = (spacLoop) + (astLoop) + (spacLoop);
         tower.push_back(levelStructure);
         nAsterisk += 2;
         nSpaces -= 1;
-        astLoop = (nAsterisk, ast);
-        spacLoop = (nSpaces, spac);
-        level++;
     }    
 
     // Return tower
@@ -59,7 +56,7 @@ std::vector<std::string> createTower(int nLevels) {
 // Test
 int main() {
 
-    int nLevelsTest = 6;
+    int nLevelsTest = 3;
     std::vector<std::string> result;
     
     result = createTower(nLevelsTest);
