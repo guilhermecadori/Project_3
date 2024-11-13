@@ -41,6 +41,28 @@ std::string charAlphabetPosition(const std::string& inputString) {
     return outputString;
 }
 
+/*
+
+// Version for better memory use 
+
+std::string alphabet_position(const std::string &text) {
+    std::string outputString;
+
+    for (char letter : text) {
+        if (std::isalpha(letter)) {
+            int position = std::tolower(letter) - 'a' + 1; // Calculate alphabet position directly
+            outputString += std::to_string(position) + ' ';
+        }
+    }
+
+    if (!outputString.empty()) {
+        outputString.pop_back(); // Remove the last space
+    }
+
+    return outputString;
+}
+*/
+
 // Test
 int main() {
 
