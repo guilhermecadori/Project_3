@@ -25,7 +25,7 @@
 int timesBallBounces(double h, double bounce, double window) {
 
     // Initial parameter check
-    if (h <= 0 or bounce > 1 or bounce <= 0 or window > h) {
+    if (h <= 0 || bounce <= 0 || bounce >= 1 || window >= h) {
         return -1;
     }
 
