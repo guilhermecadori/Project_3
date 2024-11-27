@@ -30,7 +30,7 @@ int timesBallBounces(double h, double bounce, double window) {
     }
 
     int bounceCount = 0;
-    float currentBallHeight = h;
+    double currentBallHeight = h;
 
     // Counting how many time the ball bounces
     if (currentBallHeight > window) {
